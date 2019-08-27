@@ -39,6 +39,10 @@ class APIHandler
         
         curl_close($ch);
 
+        try {
+            $data = json_decode($data);
+        } catch (\Exception $err) {}
+
         return [
             'data' => $data,
             'httpCode' => $httpCode,

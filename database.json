@@ -1,0 +1,83 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "id": 3,
+      "name": "mobileAdaptive",
+      "title": "Mobile Adaptive",
+      "body": "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque.",
+      "options": "[]",
+      "author": "Anonymous",
+      "created_at": null,
+      "updated_at": "2019-08-21 16:45:09",
+      "status": 1
+    },
+    {
+      "id": 1,
+      "name": "card-3",
+      "title": "Card Three",
+      "body": "Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "options": "[{\"name\":\"title\",\"value\":\"Card Three\"}]",
+      "author": "Anonymous",
+      "created_at": null,
+      "updated_at": "2019-08-21 16:45:33",
+      "status": 1
+    },
+    {
+      "id": 55,
+      "name": "card-1",
+      "title": "Card One",
+      "body": "Ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cumque earum, id ipsam saepe totam. Assumenda beatae delectus eligendi eveniet excepturi, illo ipsam itaque omnis quo saepe ullam.",
+      "options": "[{\"name\":\"title\",\"value\":\"Card One\"}]",
+      "author": "Anonymous",
+      "created_at": "2019-08-13 16:42:41",
+      "updated_at": "2019-08-21 16:45:51",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "name": "applicationsCreators",
+      "title": "Applications Creators",
+      "body": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+      "options": "[{\"name\":\"author_1_photo\",\"value\":\"icon.png\"},{\"name\":\"author_1_name\",\"value\":\"Author Name\"},{\"name\":\"author_1_post\",\"value\":\"PHP Developer\"},{\"name\":\"author_2_photo\",\"value\":\"icon.png\"},{\"name\":\"author_2_name\",\"value\":\"Author Name\"},{\"name\":\"author_2_post\",\"value\":\"JS Developer\"},{\"name\":\"author_3_photo\",\"value\":\"icon.png\"},{\"name\":\"author_3_name\",\"value\":\"Author Name\"},{\"name\":\"author_3_post\",\"value\":\"Python Developer\"}]",
+      "author": "Anonymous",
+      "created_at": null,
+      "updated_at": "2019-08-21 16:56:49",
+      "status": 1
+    },
+    {
+      "id": 52,
+      "name": "environmentForApplication",
+      "title": "Environment for application",
+      "body": "Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.\n\nNulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque.",
+      "options": "[]",
+      "author": "Anonymous",
+      "created_at": "2019-08-13 07:10:56",
+      "updated_at": "2019-08-21 17:00:00",
+      "status": 1
+    },
+    {
+      "id": 51,
+      "name": "card-2",
+      "title": "Card Two",
+      "body": "Dolores esse fuga laudantium quasi vero! Alias autem error, ex explicabo hic illum magnam obcaecati. Assumenda ea id, iure non saepe veniam.",
+      "options": "[{\"name\":\"title\",\"value\":\"Card Two\"}]",
+      "author": "Anonymous",
+      "created_at": "2019-08-12 14:30:05",
+      "updated_at": "2019-08-21 17:12:38",
+      "status": 1
+    },
+    {
+      "id": 11,
+      "name": "header",
+      "title": "Header",
+      "body": "Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit.",
+      "options": "[{\"name\":\"title\",\"value\":\"Page Title\"}]",
+      "author": "Anonimus",
+      "created_at": "2019-08-06 15:38:32",
+      "updated_at": "2019-08-27 13:33:32",
+      "status": 1
+    }
+  ],
+  "length": 7
+}

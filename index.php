@@ -52,13 +52,17 @@ $app->get('/chunks', function (Request $request, Response $response) {
     $result = null;
 
     if ($key) {
-        $result = APIHandler:: httpResponse('GET', SERVER_ADDRESS . '/chunks?key=' . 'page');
+        $result = APIHandler:: httpResponse('GET', SERVER_ADDRESS . '/chunks?key=' . $key);
+    }
+
+    if ($result && $result['httpCode'] === 200) {
+        $result = $result['data'];
     }
 
     $responseData = [
         'ok' => !!$key,
         'query' => $params,
-        'result' => $result && $result['httpCode'] === 200 ? $result['data'] : array()
+        'result' => $result ? $result : []
     ];
 
     $response
