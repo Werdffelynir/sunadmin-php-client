@@ -76,6 +76,32 @@ $app->get('/chunks', function (Request $request, Response $response) {
 });
 
 
+$app->post('/files', function (Request $request, Response $response, $args) {
+    $params = $request->getParsedBody();
+    $responseData = [
+        'ok' => false,
+    ];
+    if(!empty($params['name']) AND !empty($params['data'])) {
+        $data = str_replace('data:image/png;base64,', '', $params['data']);
+        $data = str_replace(' ', '+', $data);
+        $data = base64_decode($data);
+        $file = 'cache/images/'. $params['name'] . date("YmdHis") . '.png';
+        if (file_put_contents($file, $data))
+            $responseData['ok'] = true;
+    }
+
+    $response
+        ->getBody()
+        ->write(APIHelper::json($responseData));
+
+
+    return $response
+        ->withHeader('Access-Control-Allow-Origin', '*')
+        ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
+        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+});
+
+
 
 $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function(Request $request, Response $response) {
     return $response
