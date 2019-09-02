@@ -2,10 +2,10 @@
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
+use \Client\Classes\APIHelper;
+use \Client\Classes\APIHandler;
 
-require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . '/src/APIHelper.php';
-require __DIR__ . '/src/APIHandler.php';
+$loader = require __DIR__ . '/vendor/autoload.php';
 
 
 const SERVER_ADDRESS = 'http://sunadmin.loc/api';
@@ -56,9 +56,11 @@ $app->get('/chunks', function (Request $request, Response $response) {
     }
 
     if ($result && $result['httpCode'] === 200) {
-        $result = $result['data'];
+        $result = \Client\SunLightData::prepare($result['data']);
     }
 
+//    var_dump($result);
+//    die;
     $responseData = [
         'ok' => !!$key,
         'query' => $params,

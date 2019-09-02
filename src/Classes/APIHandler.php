@@ -1,18 +1,16 @@
 <?php
 
+namespace Client\Classes;
+
 
 class APIHandler
 {
     static public function chunks () {
-        
-        
         return [];
     }
 
-
     static public function mail ()
     {
-
         return [];
     }
 
